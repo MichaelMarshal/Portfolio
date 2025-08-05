@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <div className="relative w-48 h-48 mx-auto mb-8">
             <Image
-              src="/profile.jpeg"
+              src="https://michaelmarshal.github.io/Portfolio/profile.jpeg"
               alt="Profile Picture"
               fill
               className="rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-xl"

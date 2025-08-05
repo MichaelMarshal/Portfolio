@@ -6,6 +6,13 @@ const nextConfig: NextConfig = {
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'michaelmarshal.github.io',
+        pathname: '**',
+      },
+    ],
   },
 };
 
