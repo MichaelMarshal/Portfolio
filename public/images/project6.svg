@@ -1,0 +1,17 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#06B6D4"/>
+  <rect x="50" y="50" width="500" height="300" fill="white" rx="10"/>
+  <rect x="70" y="70" width="200" height="260" fill="#F0F9FF" rx="5"/>
+  <rect x="290" y="70" width="240" height="260" fill="#F0F9FF" rx="5"/>
+  <rect x="80" y="80" width="180" height="30" fill="#06B6D4" rx="5"/>
+  <rect x="300" y="80" width="220" height="30" fill="#06B6D4" rx="5"/>
+  <circle cx="360" cy="150" r="15" fill="#06B6D4"/>
+  <circle cx="400" cy="150" r="15" fill="#06B6D4"/>
+  <circle cx="440" cy="150" r="15" fill="#06B6D4"/>
+  <rect x="80" y="130" width="180" height="15" fill="#E0F2FE" rx="3"/>
+  <rect x="80" y="155" width="150" height="15" fill="#E0F2FE" rx="3"/>
+  <rect x="80" y="180" width="170" height="15" fill="#E0F2FE" rx="3"/>
+  <rect x="300" y="180" width="220" height="15" fill="#E0F2FE" rx="3"/>
+  <rect x="300" y="205" width="180" height="15" fill="#E0F2FE" rx="3"/>
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="18" fill="#374151" text-anchor="middle">Real-time Chat App</text>
+</svg>

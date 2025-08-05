@@ -1,0 +1,13 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#F59E0B"/>
+  <rect x="50" y="50" width="500" height="300" fill="white" rx="10"/>
+  <circle cx="300" cy="120" r="40" fill="#F59E0B"/>
+  <path d="M 280 110 L 290 100 L 310 100 L 320 110 L 310 130 L 290 130 Z" fill="white"/>
+  <rect x="100" y="180" width="100" height="60" fill="#DBEAFE" rx="5"/>
+  <rect x="250" y="180" width="100" height="60" fill="#DBEAFE" rx="5"/>
+  <rect x="400" y="180" width="100" height="60" fill="#DBEAFE" rx="5"/>
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="14" fill="#1E40AF" text-anchor="middle">25°C</text>
+  <text x="300" y="220" font-family="Arial, sans-serif" font-size="14" fill="#1E40AF" text-anchor="middle">22°C</text>
+  <text x="450" y="220" font-family="Arial, sans-serif" font-size="14" fill="#1E40AF" text-anchor="middle">28°C</text>
+  <text x="300" y="320" font-family="Arial, sans-serif" font-size="18" fill="#374151" text-anchor="middle">Weather Dashboard</text>
+</svg>

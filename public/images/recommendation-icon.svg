@@ -1,0 +1,53 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#10B981" rx="30"/>
+  
+  <!-- Central node (main recommendation engine) -->
+  <circle cx="100" cy="100" r="20" fill="white" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="100" cy="100" r="8" fill="#F59E0B"/>
+  
+  <!-- User nodes -->
+  <circle cx="60" cy="60" r="12" fill="white" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="60" cy="60" r="4" fill="#6366F1"/>
+  
+  <circle cx="140" cy="60" r="12" fill="white" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="140" cy="60" r="4" fill="#6366F1"/>
+  
+  <circle cx="60" cy="140" r="12" fill="white" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="60" cy="140" r="4" fill="#6366F1"/>
+  
+  <circle cx="140" cy="140" r="12" fill="white" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="140" cy="140" r="4" fill="#6366F1"/>
+  
+  <!-- Recommendation items -->
+  <circle cx="30" cy="100" r="8" fill="white" stroke="#EC4899" stroke-width="2"/>
+  <circle cx="30" cy="100" r="3" fill="#EC4899"/>
+  
+  <circle cx="170" cy="100" r="8" fill="white" stroke="#EC4899" stroke-width="2"/>
+  <circle cx="170" cy="100" r="3" fill="#EC4899"/>
+  
+  <circle cx="100" cy="30" r="8" fill="white" stroke="#EC4899" stroke-width="2"/>
+  <circle cx="100" cy="30" r="3" fill="#EC4899"/>
+  
+  <circle cx="100" cy="170" r="8" fill="white" stroke="#EC4899" stroke-width="2"/>
+  <circle cx="100" cy="170" r="3" fill="#EC4899"/>
+  
+  <!-- Connection lines -->
+  <line x1="72" y1="72" x2="88" y2="88" stroke="white" stroke-width="2" opacity="0.8"/>
+  <line x1="128" y1="72" x2="112" y2="88" stroke="white" stroke-width="2" opacity="0.8"/>
+  <line x1="72" y1="128" x2="88" y2="112" stroke="white" stroke-width="2" opacity="0.8"/>
+  <line x1="128" y1="128" x2="112" y2="112" stroke="white" stroke-width="2" opacity="0.8"/>
+  
+  <line x1="38" y1="100" x2="80" y2="100" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="120" y1="100" x2="162" y2="100" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="38" x2="100" y2="80" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="120" x2="100" y2="162" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- AI stars for intelligence -->
+  <polygon points="150,45 152,50 157,50 153,53 155,58 150,55 145,58 147,53 143,50 148,50" fill="#FCD34D"/>
+  <polygon points="50,45 52,50 57,50 53,53 55,58 50,55 45,58 47,53 43,50 48,50" fill="#FCD34D"/>
+  <polygon points="50,155 52,160 57,160 53,163 55,168 50,165 45,168 47,163 43,160 48,160" fill="#FCD34D"/>
+  
+  <!-- Text -->
+  <text x="100" y="190" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SMART AI</text>
+</svg>

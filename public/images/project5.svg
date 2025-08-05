@@ -1,0 +1,14 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#EF4444"/>
+  <rect x="50" y="50" width="500" height="300" fill="white" rx="10"/>
+  <rect x="70" y="70" width="460" height="50" fill="#EF4444" rx="5"/>
+  <rect x="80" y="85" width="30" height="20" fill="white" rx="3"/>
+  <rect x="120" y="85" width="50" height="20" fill="white" rx="3"/>
+  <rect x="180" y="85" width="40" height="20" fill="white" rx="3"/>
+  <rect x="70" y="140" width="460" height="180" fill="#F9FAFB" rx="5"/>
+  <rect x="90" y="160" width="420" height="20" fill="#E5E7EB" rx="3"/>
+  <rect x="90" y="190" width="380" height="20" fill="#E5E7EB" rx="3"/>
+  <rect x="90" y="220" width="400" height="20" fill="#E5E7EB" rx="3"/>
+  <rect x="90" y="250" width="350" height="20" fill="#E5E7EB" rx="3"/>
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="18" fill="#374151" text-anchor="middle">Blog CMS</text>
+</svg>
