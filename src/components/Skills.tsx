@@ -49,7 +49,7 @@ const skills = [
   { name: "CI/CD", category: "DevOps" },
   { name: "Machine Learning", category: "AI/ML" },
   { name: "NLP", category: "AI/ML" },
-  { name: "spaCy", category: "AI/ML", customIcon: "/images/spacy-icon.png" },
+  { name: "spaCy", category: "AI/ML", customIcon: "https://michaelmarshal.github.io/Portfolio/images/spacy-icon.png" },
   { name: "TensorFlow", category: "AI/ML", icon: Tensorflow },
   { name: "PyTorch", category: "AI/ML", icon: PyTorch },
   { name: "OpenAI API", category: "AI/ML", icon: OpenAI },
