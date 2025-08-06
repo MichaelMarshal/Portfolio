@@ -8,7 +8,7 @@ const projects = [
   {
     title: "NLP SMS Application",
     description: "A sample application created with Natural Language Processing and Ideamart's SMS API. Features intelligent text processing and automated SMS responses using Google NLP services.",
-    image: "/images/nlp-sms-icon.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/nlp-sms-icon.svg",
     technologies: ["PHP", "NLP", "SMS API", "Google APIs", "Natural Language Processing"],
     githubUrl: "https://github.com/MichaelMarshal/NLP",
     liveUrl: null,
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "React User Management App",
     description: "A personal project featuring comprehensive user management functionality built with React. Includes user authentication, profile management, and modern UI components.",
-    image: "/images/project1.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project1.svg",
     technologies: ["React", "JavaScript", "User Management", "Frontend"],
     githubUrl: "https://github.com/MichaelMarshal/React-User-App",
     liveUrl: null,
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "A* Pathfinding Algorithm",
     description: "Implementation of pathfinding algorithms using A* with Manhattan, Chebyshev, and Euclidean distance metrics. Demonstrates advanced algorithmic problem-solving techniques.",
-    image: "/images/project5.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project5.svg",
     technologies: ["Java", "Algorithms", "A* Search", "Pathfinding", "Data Structures"],
     githubUrl: "https://github.com/MichaelMarshal/Algorithm-pathfinding-",
     liveUrl: null,
@@ -41,7 +41,7 @@ const projects = [
   {
     title: "Profiles REST API",
     description: "A comprehensive REST API for managing user profiles with full CRUD operations. Built with Python and designed for scalable profile management systems.",
-    image: "/images/project4.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project4.svg",
     technologies: ["Python", "REST API", "Profile Management", "Backend"],
     githubUrl: "https://github.com/MichaelMarshal/Profiles-rest-api",
     liveUrl: null,
@@ -52,7 +52,7 @@ const projects = [
   {
     title: "Star Wars Name Generator",
     description: "A fun application that integrates Ideamart API with Star Wars API (SWAPI) to generate Star Wars character names and information through SMS interactions.",
-    image: "/images/project5.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project5.svg",
     technologies: ["PHP", "API Integration", "SWAPI", "SMS API", "Entertainment"],
     githubUrl: "https://github.com/MichaelMarshal/StarwarsName",
     liveUrl: null,
@@ -63,7 +63,7 @@ const projects = [
   {
     title: "Sample Database Project",
     description: "Database management and sample data project demonstrating database design principles, data modeling, and query optimization techniques.",
-    image: "/images/project6.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project6.svg",
     technologies: ["Database", "Data Modeling", "SQL", "Backend"],
     githubUrl: "https://github.com/MichaelMarshal/sampleDb",
     liveUrl: null,
@@ -74,7 +74,7 @@ const projects = [
   {
     title: "AI-Powered Document Analyzer",
     description: "An intelligent document processing system using machine learning to extract, classify, and analyze text from various document formats. Features OCR, sentiment analysis, and automated categorization.",
-    image: "/images/project2.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project2.svg",
     technologies: ["Python", "Machine Learning", "OCR", "NLP", "TensorFlow", "OpenAI API"],
     githubUrl: "https://github.com/MichaelMarshal/ai-document-analyzer",
     liveUrl: null,
@@ -86,7 +86,7 @@ const projects = [
   {
     title: "Smart Recommendation Engine",
     description: "AI-driven recommendation system using collaborative filtering and deep learning algorithms. Provides personalized suggestions based on user behavior patterns and preferences.",
-    image: "/images/recommendation-icon.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/recommendation-icon.svg",
     technologies: ["Python", "Deep Learning", "Collaborative Filtering", "PyTorch", "Redis", "FastAPI"],
     githubUrl: "https://github.com/MichaelMarshal/smart-recommendation-engine",
     liveUrl: null,
@@ -98,7 +98,7 @@ const projects = [
   {
     title: "Enterprise Dashboard Management System",
     description: "Comprehensive dashboard management platform for enterprise analytics and reporting. Features real-time data visualization, customizable widgets, and role-based access control. Currently in active development.",
-    image: "/images/project3.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project3.svg",
     technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Chart.js", "WebSocket"],
     githubUrl: "https://github.com/MichaelMarshal/dashboard-management",
     liveUrl: null,
@@ -110,7 +110,7 @@ const projects = [
   {
     title: "YouTube Marketing AI",
     description: "Full-stack application for analyzing and improving YouTube product marketing. Features FastAPI backend with NLP-powered sentiment analysis, automated data ingestion, and AI-driven marketing suggestions using Ollama/OpenAI integration.",
-    image: "/images/project3.svg",
+    image: "https://michaelmarshal.github.io/Portfolio/images/project3.svg",
     technologies: ["Python", "FastAPI", "React", "TypeScript", "Docker", "spaCy", "Ollama", "YouTube API"],
     githubUrl: "https://github.com/MichaelMarshal/YoutubeMarketingAI",
     liveUrl: null,

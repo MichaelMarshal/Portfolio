@@ -59,7 +59,7 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-4">
-            Whitchurch-Stouffville, Ontario, Canada
+            Markham, Ontario, Canada
           </p>
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Strategic Problem Solver | MBA Candidate | Tech Innovator | Analytical Thinker | Experienced Technical Solutions Specialist
