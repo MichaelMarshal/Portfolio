@@ -6,7 +6,7 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const education = [
   {
     degree: "Master of Business Administration (MBA)",
-    field: "Entrepreneurship/Entrepreneurial Studies",
+    field: "Technology, Innovation and Entrepreneurship",
     institution: "International Business University",
     location: "Canada",
     period: "Jan 2024 - Present",
