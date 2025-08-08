@@ -56,15 +56,31 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // In a real implementation, you would send the data to your backend
-      console.log('Form data:', data);
-      
-      setSubmitStatus('success');
-      reset();
-    } catch {
+      // Using Web3Forms for email sending (free service)
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // Replace with your actual access key
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+          from_name: data.name,
+          to_email: 'marshalmichael85@gmail.com', // Your email address
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -105,6 +121,9 @@ export default function Contact() {
             </h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              {/* Hidden field for Web3Forms */}
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+              
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">

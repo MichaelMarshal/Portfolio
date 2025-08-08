@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { GraduationCap, Calendar, MapPin, Trophy, Award, Star } from "lucide-react";
+import Image from "next/image";
 
 const education = [
   {
@@ -45,6 +46,29 @@ const education = [
   }
 ];
 
+const achievements = [
+  {
+    title: "National Best Quality Software Awards (NBQSA) - Bronze Medal",
+    category: "Tertiary Student Project – Business Category",
+    project: "Park-ER",
+    year: "2019",
+    description: "Won Bronze medal for the Park-ER project under the Tertiary Student Project – Business category at the National Best Quality Software Awards competition.",
+    image: "https://michaelmarshal.github.io/Portfolio/images/nbqsa-award.jpg",
+    icon: Trophy,
+    color: "text-amber-600 dark:text-amber-400"
+  },
+  {
+    title: "Capstone Competition - 3rd Place",
+    category: "International Business University",
+    project: "Pathfinder",
+    year: "2024",
+    description: "Secured 3rd place in the Capstone competition at International Business University for the innovative Pathfinder project.",
+    image: "https://michaelmarshal.github.io/Portfolio/images/capstone-award.jpeg",
+    icon: Award,
+    color: "text-orange-600 dark:text-orange-400"
+  }
+];
+
 export default function Education() {
   return (
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
@@ -56,11 +80,11 @@ export default function Education() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 px-2">
             Education
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4">
             My academic background and qualifications
           </p>
         </motion.div>
@@ -83,19 +107,19 @@ export default function Education() {
                         <GraduationCap className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                       </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white break-words">
                         {edu.degree}
                       </h3>
                       {edu.field && (
-                        <p className="text-lg text-gray-700 dark:text-gray-300">
+                        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 break-words">
                           {edu.field}
                         </p>
                       )}
                     </div>
                   </div>
                   
-                  <div className="mt-4 sm:mt-0 sm:text-right">
+                  <div className="mt-4 sm:mt-0 sm:text-right flex-shrink-0">
                     <div className="flex items-center text-blue-600 dark:text-blue-400 text-sm mb-1">
                       <Calendar className="w-4 h-4 mr-1" />
                       {edu.period}
@@ -104,11 +128,11 @@ export default function Education() {
                 </div>
 
                 <div className="mb-4">
-                  <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-1">
+                  <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-1 break-words">
                     {edu.institution}
                   </h4>
                   <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
-                    <MapPin className="w-4 h-4 mr-1" />
+                    <MapPin className="w-4 h-4 mr-1 flex-shrink-0" />
                     {edu.location}
                   </div>
                 </div>
@@ -125,8 +149,8 @@ export default function Education() {
                     <ul className="space-y-1">
                       {edu.achievements.map((achievement, achievementIndex) => (
                         <li key={achievementIndex} className="text-gray-700 dark:text-gray-300 flex items-start">
-                          <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1">•</span>
-                          {achievement}
+                          <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1 flex-shrink-0">•</span>
+                          <span className="break-words">{achievement}</span>
                         </li>
                       ))}
                     </ul>
@@ -136,6 +160,89 @@ export default function Education() {
             </motion.div>
           ))}
         </div>
+
+        {/* Achievements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4 px-2">
+              Awards & Achievements
+            </h3>
+            <div className="w-24 h-1 bg-amber-500 mx-auto mb-4"></div>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4">
+              Recognition and awards received for outstanding projects and academic excellence
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {achievements.map((achievement, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
+              >
+                <div className="relative h-64 bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900 dark:to-orange-900">
+                  <Image
+                    src={achievement.image}
+                    alt={achievement.title}
+                    fill
+                    className="object-contain p-2"
+                    style={{
+                      objectPosition: 'center top'
+                    }}
+                    onError={(e) => {
+                      // Fallback for missing images - show icon instead
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                  <div className="absolute top-4 left-4">
+                    <div className={`w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-md`}>
+                      <achievement.icon className={`w-6 h-6 ${achievement.color}`} />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-4 right-4">
+                    <span className="px-3 py-1 bg-white/90 text-gray-800 rounded-full text-sm font-medium shadow-md">
+                      {achievement.year}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-6">
+                  <div className="mb-3">
+                    <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-1 break-words">
+                      {achievement.title}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 break-words">
+                      {achievement.category}
+                    </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <div className="flex items-center mb-2">
+                      <Star className={`w-4 h-4 mr-2 ${achievement.color}`} />
+                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">
+                        Project: {achievement.project}
+                      </span>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    {achievement.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
